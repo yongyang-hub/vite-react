@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getDatabase } from 'firebase/database'
+import { getDatabase, ref, get, set, onValue } from 'firebase/database'
 
 const firebaseConfig = {
   apiKey:            import.meta.env.VITE_FIREBASE_API_KEY,
@@ -12,4 +12,20 @@ const firebaseConfig = {
 }
 
 const app = initializeApp(firebaseConfig)
-export const db = getDatabase(app)
+const db  = getDatabase(app)
+
+export const dbGet = async (path) => {
+  const snap = await get(ref(db, path))
+  return snap.exists() ? snap.val() : null
+}
+
+export const dbSet = async (path, value) => {
+  await set(ref(db, path), value)
+}
+
+export const dbListen = (path, callback) => {
+  const unsubscribe = onValue(ref(db, path), snap => {
+    callback(snap.exists() ? snap.val() : null)
+  })
+  return unsubscribe
+}
