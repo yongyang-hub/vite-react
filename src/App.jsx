@@ -197,6 +197,161 @@ const CLINICS = [
       { name: "이중턱·심부볼 인모드", su: 273 },
     ]
   },
+  // ── 신규 추가 (기본값 적용 · 정보 확인 필요) ──────────────────────
+  {
+    id: "1001", name: "루호성형외과", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["눈성형", "코"],
+    triggers: [],
+    consultants: [],
+    caution: "2년 사후관리 제공. 상담비 없음.",
+    topEvents: []
+  },
+  {
+    id: "1002", name: "메이필클리닉", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["실리프팅", "스킨부스터", "리쥬란", "필러"],
+    triggers: [],
+    consultants: [],
+    caution: "상담비 없음.",
+    topEvents: []
+  },
+  {
+    id: "1003", name: "플래너성형외과", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["리프팅", "코", "눈성형"],
+    triggers: [],
+    consultants: [],
+    caution: "상담비 없음.",
+    topEvents: []
+  },
+  {
+    id: "1004", name: "아크로한의원", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["한방", "지방분해"],
+    triggers: [],
+    consultants: [],
+    caution: "매일 운영. 상담만 진행 시 상담비 3만원 발생.",
+    topEvents: []
+  },
+  {
+    id: "1005", name: "매종드엠", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["리프팅"],
+    triggers: [],
+    consultants: [],
+    caution: "상담만 진행 시 1만원.",
+    topEvents: []
+  },
+  {
+    id: "1006", name: "플로리아의원", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["스킨부스터", "피부"],
+    triggers: [],
+    consultants: [],
+    caution: "부산 위치. 평일 10:00-20:00, 토요일 10:00-16:00.",
+    topEvents: []
+  },
+  {
+    id: "1007", name: "네스트의원", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["필러", "피부"],
+    triggers: [],
+    consultants: [],
+    caution: "",
+    topEvents: []
+  },
+  {
+    id: "1008", name: "티에스성형외과", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["안면윤곽", "눈성형", "코", "가슴"],
+    triggers: [],
+    consultants: [],
+    caution: "상담비 없음. 원장님 지정 예약 시 상담비 1만원.",
+    topEvents: []
+  },
+  {
+    id: "1009", name: "플레저성형외과", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["리프팅", "안면윤곽"],
+    triggers: [],
+    consultants: [],
+    caution: "상담비 없음. 울쎄라 및 수술 예약 시 예약비 있음.",
+    topEvents: []
+  },
+  {
+    id: "1010", name: "우아성형외과", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["가슴", "리프팅", "실리프팅", "피부", "보톡스"],
+    triggers: [],
+    consultants: [],
+    caution: "가슴 내원 상담비 발생(원장별 상이). 화상 상담 가능(3만원). 신논현 위치.",
+    topEvents: []
+  },
+  {
+    id: "1011", name: "히트성형외과", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["눈성형", "코", "지방분해"],
+    triggers: [],
+    consultants: [],
+    caution: "상담비 없음.",
+    topEvents: []
+  },
+  {
+    id: "1012", name: "셀리팅의원", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["줄기세포", "지방분해", "제모", "리프팅", "필러"],
+    triggers: [],
+    consultants: [],
+    caution: "",
+    topEvents: []
+  },
+  {
+    id: "1013", name: "리디아여성의원", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["여성수술"],
+    triggers: [],
+    consultants: [],
+    caution: "",
+    topEvents: []
+  },
+  {
+    id: "1014", name: "릴리브의원", tier: 2,
+    excludeCountries: [],
+    language: [],
+    speed: "보통", price: "중",
+    specialties: ["필러", "스킨부스터", "리프팅", "여드름"],
+    triggers: [],
+    consultants: [],
+    caution: "상담만 진행 시 5만원.",
+    topEvents: []
+  },
 ];
 
 const SPECIALTY_OPTIONS = [
@@ -211,7 +366,26 @@ const SPECIALTY_OPTIONS = [
   { label: "제모", tags: ["제모"] },
   { label: "입술 필러", tags: ["입술필러", "필러"] },
   { label: "온다 / 레이저", tags: ["온다", "레이저"] },
+  { label: "눈 성형", tags: ["눈성형"] },
+  { label: "코 성형", tags: ["코"] },
+  { label: "안면윤곽 / 거상", tags: ["안면윤곽"] },
+  { label: "가슴 성형", tags: ["가슴"] },
+  { label: "한방 / 다이어트", tags: ["한방"] },
+  { label: "여성 수술", tags: ["여성수술"] },
 ];
+
+const CLINIC_AREAS = {
+  "3234": "신논현", "7493": "신논현", "3608": "청담",
+  "1889": "강남",  "7826": "홍대",   "5857": "신논현",
+  "802":  "청담",  "5524": "강남",   "1860": "역삼",
+  "5826": "홍대",  "5663": "강남",   "6890": "신논현",
+  "46":   "신사",  "6681": "홍대",
+  "1001": "신사",  "1002": "강남",   "1003": "강남",
+  "1004": "신논현","1005": "강남",   "1006": "부산",
+  "1007": "강남",  "1008": "신사",   "1009": "신논현",
+  "1010": "신논현","1011": "신논현", "1012": "강남",
+  "1013": "강남",  "1014": "압구정",
+};
 
 function scoreClinic(clinic, form) {
   let pts = 0;
@@ -271,9 +445,13 @@ const CONSULTANT_COLOR = {
 };
 
 export default function App() {
+  const [tab, setTab] = useState("recommend");
   const [form, setForm] = useState({ language: "", country: "", schedule: "", specialty: "", budget: "" });
   const [results, setResults] = useState(null);
   const [expanded, setExpanded] = useState({});
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchArea, setSearchArea] = useState("");
+  const [searchSpecialty, setSearchSpecialty] = useState("");
 
   const set = (k, v) => { setForm(f => ({ ...f, [k]: v })); setResults(null); };
 
@@ -293,6 +471,24 @@ export default function App() {
   };
 
   const ready = form.language && form.schedule && form.specialty;
+
+  const AREAS = ["강남", "홍대", "신논현", "청담", "신사", "역삼", "압구정", "부산"];
+
+  const searchResults = CLINICS.filter(c => {
+    const area = CLINIC_AREAS[c.id] || "";
+    const matchArea = !searchArea || area === searchArea;
+    const opt = SPECIALTY_OPTIONS.find(o => o.label === searchSpecialty);
+    const tags = opt?.tags || [];
+    const matchSpecialty = !searchSpecialty ||
+      tags.some(t => c.specialties.includes(t) || c.triggers.includes(t));
+    const q = searchQuery.trim();
+    const matchQuery = !q ||
+      c.name.includes(q) ||
+      c.specialties.some(s => s.includes(q)) ||
+      area.includes(q) ||
+      (c.caution && c.caution.includes(q));
+    return matchArea && matchSpecialty && matchQuery;
+  });
 
   const Chip = ({ val, cur, onClick }) => (
     <button onClick={onClick}
@@ -315,9 +511,98 @@ export default function App() {
 
         <div className="pt-2 pb-1">
           <h1 className="text-xl font-bold text-gray-900">🏥 클리닉 추천 도구</h1>
-          <p className="text-xs text-gray-400 mt-0.5">계약 병원 기준 · 2–3개 추천 · 우선순위: 언어 → 일정 → 시술 → 예산</p>
+          <p className="text-xs text-gray-400 mt-0.5">계약 병원 {CLINICS.length}개 등록</p>
         </div>
 
+        <div className="flex gap-1 bg-gray-100 p-1 rounded-xl">
+          <button
+            onClick={() => setTab("recommend")}
+            className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${
+              tab === "recommend" ? "bg-white text-indigo-600 shadow-sm" : "text-gray-500 hover:text-gray-700"
+            }`}>
+            추천 받기
+          </button>
+          <button
+            onClick={() => setTab("search")}
+            className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${
+              tab === "search" ? "bg-white text-indigo-600 shadow-sm" : "text-gray-500 hover:text-gray-700"
+            }`}>
+            병원 검색
+          </button>
+        </div>
+
+        {tab === "search" && (
+          <div className="space-y-3">
+            <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 space-y-4">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={e => setSearchQuery(e.target.value)}
+                placeholder="병원명, 시술명, 지역으로 검색..."
+                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-indigo-300"
+              />
+              <div>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">지역</p>
+                <div className="flex flex-wrap gap-2">
+                  {AREAS.map(v => (
+                    <Chip key={v} val={v} cur={searchArea} onClick={() => setSearchArea(searchArea === v ? "" : v)} />
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">시수술</p>
+                <div className="flex flex-wrap gap-2">
+                  {SPECIALTY_OPTIONS.map(o => (
+                    <Chip key={o.label} val={o.label} cur={searchSpecialty} onClick={() => setSearchSpecialty(searchSpecialty === o.label ? "" : o.label)} />
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <p className="text-xs text-gray-500 px-1">{searchResults.length}개 병원</p>
+
+            {searchResults.map(c => {
+              const area = CLINIC_AREAS[c.id] || "";
+              return (
+                <div key={c.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <span className="text-base font-bold text-gray-900">{c.name}</span>
+                      <div className="flex items-center gap-1.5 mt-1 flex-wrap">
+                        {area && <span className="text-xs px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-600">{area}</span>}
+                        <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${tierBadge(c.tier)}`}>Tier {c.tier}</span>
+                        <span className={`text-xs font-medium ${speedColor(c.speed)}`}>응대 {c.speed}</span>
+                        <span className="text-xs text-gray-400">💰 {c.price}</span>
+                        {c.language.map(l => (
+                          <span key={l} className="text-xs px-2 py-0.5 rounded-full bg-blue-50 text-blue-600">
+                            {l === "태국어" ? "🇹🇭" : l === "영어" ? "🇺🇸" : l === "중국어" ? "🇨🇳" : ""} {l}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-1 items-end shrink-0 ml-2">
+                      {c.consultants.map(n => (
+                        <span key={n} className={`text-xs px-2 py-0.5 rounded-full ${CONSULTANT_COLOR[n] || "bg-gray-100 text-gray-500"}`}>
+                          {n}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap gap-1 mb-2">
+                    {c.specialties.map(s => (
+                      <span key={s} className="text-xs px-2 py-0.5 rounded-full bg-gray-50 text-gray-500 border border-gray-100">{s}</span>
+                    ))}
+                  </div>
+                  {c.caution && (
+                    <p className="text-xs text-gray-500 bg-gray-50 rounded-lg px-3 py-1.5">{c.caution}</p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {tab === "recommend" && (<>
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 space-y-4">
 
           <div>
@@ -457,6 +742,7 @@ export default function App() {
             ))}
           </div>
         )}
+        </>)}
       </div>
     </div>
   );
